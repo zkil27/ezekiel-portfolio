@@ -1,4 +1,3 @@
-
 button{
     background-color: transparent;
     border: none;
@@ -12,16 +11,23 @@ a {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 8px 16px;
     display: inline-block;
 }
 
 nav{
     display: flex;
-    width: 100vw;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
+    gap: calc(2rem + 1vw);
+    z-index: 1000;
+    background-color: white;
+
 
 }
+
+
 
 .home-icon{
     width: 85.161px;
@@ -29,6 +35,7 @@ nav{
 }
 
 .nav-container{
-    display: inherit;
-    
+    display: flex;
+    font-weight: 500 !important;
 }
+

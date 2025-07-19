@@ -1,27 +1,29 @@
 import { Link } from "react-router-dom"
+import { Button } from "./Button";
 import "./navBar.css"
-import HomeIcon from '../assets/images/fafafa.svg';
+import nav_icon from '../assets/images/fafafa.svg';
+
+
 
 export function NavBar(){
     return(
         <>
             <nav>
-                <img src={HomeIcon} alt="Home Icon" className="home-icon" />
+                <Link to="/"><img src={nav_icon} alt="Home Icon" className="home-icon" /></Link>
 
                 <div className="nav-container">
                     
-                    <Link to="/">
-                        <button>Home</button>
+                    <Link to="/projects">
+                        <Button>SIDE PROJECTS</Button>
                     </Link>
+
                     <Link to="/about">
-                        <button>About</button>
+                        <Button>ABOUT</Button>
                     </Link>
                     <Link to="/contact">
-                        <button>Contact</button>
+                        <Button>CONTACT</Button>
                     </Link>
-                    <Link to="/projects">
-                        <button>Projects</button>
-                    </Link>
+                    
                 </div>
             </nav>
         </>

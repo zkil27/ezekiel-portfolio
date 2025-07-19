@@ -1,0 +1,21 @@
+.hero-text {
+
+    padding-top: 5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+
+    width: 20.8125rem;
+    text-wrap: wrap;
+    caret-color: transparent;
+
+}
+
+.hero-icon{
+    width: 141.6875rem;
+    height: auto;
+    caret-color: transparent;
+
+    position: relative;
+    transform: translateX(-14rem) translateY(9.3rem);
+}

@@ -5,10 +5,28 @@ import { Contact } from './pages/contact'
 import { Projects } from './pages/projects'
 import { Layout } from './components/layout'
 import './App.css'
+import { useEffect } from 'react'
 
 
 
 function App() {
+  useEffect(() => {
+    // Add momentum scrolling
+    document.body.style.scrollBehavior = 'smooth'
+    
+    // Enhanced smooth scrolling with CSS
+    const style = document.createElement('style')
+    style.innerHTML = `
+      * {
+        scroll-behavior: smooth !important;
+      }
+      html {
+        scroll-snap-type: y proximity;
+      }
+    `
+    document.head.appendChild(style)
+  }, [])
+
   return (
     <>
       <Router>
