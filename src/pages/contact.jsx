@@ -1,8 +1,8 @@
 export function Contact() {
     return (
         <>
-            <h1>Contact OURS</h1>
-            <p>If you have any questions, feel free to reach out!</p>
+            <h1>Coming Soon</h1>
+            <p>Stay tuned for updates!</p>
         </>
     );
 }

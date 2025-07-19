@@ -23,7 +23,7 @@ nav{
     gap: calc(2rem + 1vw);
     z-index: 1000;
     background-color: white;
-
+    caret-color: transparent;
 
 }
 

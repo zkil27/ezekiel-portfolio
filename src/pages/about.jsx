@@ -1,8 +1,8 @@
 export function About() {
     return (
         <>
-            <h1>About Us</h1>
-            <p>Welcome to our about page!</p>
+            <h1>Meet Ezekiel</h1>
+            <p>hi po haha....</p>
         </>
     );
 }

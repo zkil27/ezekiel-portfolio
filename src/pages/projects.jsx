@@ -1,8 +1,9 @@
 export function Projects() {
     return (
         <>
-            <h1>Our Projects</h1>
-            <p>Here you can find a list of our projects.</p>
+            <h1>Coming Soon</h1>
+            <p>Stay tuned for updates!</p>
+            
         </>
     );
 }

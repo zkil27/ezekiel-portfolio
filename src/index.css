@@ -30,7 +30,6 @@
 
 html {
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 body{
@@ -54,7 +53,6 @@ body{
   background-color: white;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
 }
 
