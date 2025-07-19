@@ -1,0 +1,18 @@
+button{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 8px 16px;
+    display: inline-block;
+}
+

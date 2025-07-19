@@ -1,4 +1,4 @@
-export function home() {
+export function Home() {
     return (
         <>
             <h1>Homehahah</h1>
