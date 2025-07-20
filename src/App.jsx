@@ -6,6 +6,7 @@ import { Projects } from './pages/projects'
 import { Layout } from './components/layout'
 import './App.css'
 import { useEffect } from 'react'
+import { CustomCursor } from './components/CustomCursor'
 
 
 
@@ -27,8 +28,13 @@ function App() {
     document.head.appendChild(style)
   }, [])
 
+
+
   return (
     <>
+
+      
+      <CustomCursor />
       <Router>
         <Routes>
           <Route element={<Layout />} >

@@ -1,0 +1,36 @@
+* {
+    cursor: none !important;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #d6be4a;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, background-color 0.3s ease, clip-path 0.3s ease;
+    mix-blend-mode: exclusion;
+    transform-origin: center center;
+    top: 0;
+    left: 0;
+}
+
+.custom-cursor.hovering {
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    background-color: #d6be4a;
+}
+
+.custom-cursor.clicking {
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    background-color: #d6be4a;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+

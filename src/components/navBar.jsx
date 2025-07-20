@@ -2,12 +2,14 @@ import { Link } from "react-router-dom"
 import { Button } from "./Button";
 import "./navBar.css"
 import nav_icon from '../assets/images/fafafa.svg';
+import AnimatedContent from "./AnimatedContent";
 
 
 
 export function NavBar(){
     return(
         <>
+            <AnimatedContent reverse={true}>
             <nav>
                 <Link to="/"><img src={nav_icon} alt="Home Icon" className="home-icon" /></Link>
 
@@ -26,6 +28,7 @@ export function NavBar(){
                     
                 </div>
             </nav>
+            </AnimatedContent>
         </>
     )
 }

@@ -22,7 +22,7 @@ nav{
     justify-content: space-between;
     gap: calc(2rem + 1vw);
     z-index: 1000;
-    background-color: white;
+    background-color: transparent;
     caret-color: transparent;
 
 }
