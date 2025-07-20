@@ -19,6 +19,7 @@
 }
 
 .layon-title-text{
+    font-size: 1.5rem;
     font-weight: 200 !important;
     font-style: italic;
 }
@@ -28,10 +29,25 @@
     flex-direction: column;
     margin-top: 20rem;
     font-size: 2rem;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     line-height: 1.5;
     max-width: 45rem;
     text-align: left;
+}
+
+.project-showcase-title {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15rem;
+
+    font-size: 2rem;
+    font-weight: 300 !important;
+    font-style: italic;
+
 }
 
 .project-showcase-cont{
@@ -40,8 +56,8 @@
     justify-content: center;
     align-items: center;
     width: calc(100% + 4rem);
-    height: 500vh;
-    margin-top: 20rem;
+    height: 100%;
+    margin-top: 1rem;
     position: relative;
 }
 
@@ -56,46 +72,6 @@
     line-height: 1.5;
 }
 
-.project-video-wrapper {
-    width: 50%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-}
-
-.video-container {
-    position: relative;
-    width: 50%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-}
-
-.project-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.white-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #2941B5;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-    pointer-events: none;
-    z-index: 10;
-}
-
-.white-overlay.active {
-    opacity: 1;
-}
-
 .project-showcase-list{
     list-style-type: none;
     justify-content: center;
@@ -103,7 +79,7 @@
 
 .project-showcase-list li {
     margin: 25rem 0;
-    height: 50rem;
+    height: 40rem;
     max-width: 35rem;
     display: flex;
     flex-direction: column;
@@ -142,4 +118,53 @@
     margin-left: auto;
     margin-top: 6rem;
     width: fit-content;
+}
+
+.video-container {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+.project-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.white-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2941B5;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.white-overlay.active {
+    opacity: 1;
+}
+
+.blue-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2941B5;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.blue-overlay.active {
+    opacity: 1;
 }
