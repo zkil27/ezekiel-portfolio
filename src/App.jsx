@@ -4,10 +4,9 @@ import { About } from './pages/about'
 import { Contact } from './pages/contact'
 import { Projects } from './pages/projects'
 import { Layout } from './components/layout'
-import './App.css'
 import { useEffect } from 'react'
 import { CustomCursor } from './components/CustomCursor'
-
+import './index.css'
 
 
 function App() {

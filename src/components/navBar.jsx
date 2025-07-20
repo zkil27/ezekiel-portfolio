@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
 import { Button } from "./Button";
-import "./navBar.css"
 import nav_icon from '../assets/images/fafafa.svg';
 import AnimatedContent from "./AnimatedContent";
+
+import "./navBar.css"
+
 
 
 
@@ -13,10 +15,9 @@ export function NavBar(){
             <nav>
                 <Link to="/"><img src={nav_icon} alt="Home Icon" className="home-icon" /></Link>
 
-                <div className="nav-container">
-                    
+                <div className="nav-container">            
                     <Link to="/projects">
-                        <Button>SIDE PROJECTS</Button>
+                        <Button>RECENT PROJECTS</Button>
                     </Link>
 
                     <Link to="/about">
