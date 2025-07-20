@@ -5,9 +5,28 @@ import SplitText from '../components/SplitText';
 import { Tag } from '../components/Tag';
 import { Button } from "../components/Button";
 import { ProjectCard } from '../components/ProjectCard';
+import { useState } from 'react';
 
 
 export function Home() {
+    const [currentVideo, setCurrentVideo] = useState("/videos/clutch.mp4");
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    const handleVideoChange = (newVideoSrc) => {
+        if (newVideoSrc !== currentVideo) {
+            setIsTransitioning(true);
+            
+            // Fade to white first (200ms)
+            setTimeout(() => {
+                setCurrentVideo(newVideoSrc);
+                // Then fade out from white (200ms)
+                setTimeout(() => {
+                    setIsTransitioning(false);
+                }, 200);
+            }, 200);
+        }
+    };
+
     return (
         <div className="home-page">
             <div className="hero-text">
@@ -43,6 +62,8 @@ export function Home() {
                                 ]}
                                 buttonLink="https://www.facebook.com/kel.escueta.2024"
                                 threshold={0.5}
+                                videoSrc="/videos/clutch.mp4"
+                                onVideoChange={handleVideoChange}
                             />
                         </li>
                         <li>
@@ -60,6 +81,8 @@ export function Home() {
                                 ]}
                                 buttonLink="https://www.facebook.com/kel.escueta.2024"
                                 threshold={0.5}
+                                videoSrc="/videos/clutch2.mp4"
+                                onVideoChange={handleVideoChange}
                             />
                         </li>
                         <li>
@@ -67,13 +90,17 @@ export function Home() {
                         </li>
                     </ul>
                 </div>
-                <video 
-                    src="/videos/clutch.mp4" 
-                    autoPlay 
-                    muted 
-                    loop 
-                    className="project-video"
-                ></video>
+                <div className="video-container">
+                    <video 
+                        key={currentVideo}
+                        src={currentVideo}
+                        autoPlay 
+                        muted 
+                        loop 
+                        className="project-video"
+                    ></video>
+                    <div className={`white-overlay ${isTransitioning ? 'active' : ''}`}></div>
+                </div>
             </div>
         </div>
     );
