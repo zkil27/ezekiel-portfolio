@@ -39,19 +39,21 @@ export function ProjectCard({
                 <div className={`project-card ${className}`}>
                     <h2>{title}</h2>
                     
-                    {tags.map((tag, index) => (
-                        <Tag 
-                            key={index}
-                            size={tag.size || 'small'}
-                            variant={tag.variant || 'default'}
-                        >
-                            {tag.text}
-                        </Tag>
-                    ))}
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '.5rem', marginBottom: '1.5rem' }}>
+                        {tags.map((tag, index) => (
+                            <Tag 
+                                key={index}
+                                size={tag.size || 'small'}
+                                variant={tag.variant || 'default'}
+                            >
+                                {tag.text}
+                            </Tag>
+                        ))}
+                    </div>
 
                     {descriptions.map((description, index) => (
                         <div key={index}>
-                            <hr />
+                            <br />
                             <p>{description}</p>
                         </div>
                     ))}

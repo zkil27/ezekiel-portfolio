@@ -28,5 +28,5 @@
 }
 
 .custom-button:hover {
-    color: var(--text-color, #FFFFFF);
+    color: var(--text-color, #e1e1e1);
 }

@@ -24,7 +24,7 @@ export function NavBar(){
                         <Button>ABOUT</Button>
                     </Link>
                     <Link to="/contact">
-                        <Button>CONTACT</Button>
+                        <Button>REACH OUT</Button>
                     </Link>
                     
                 </div>

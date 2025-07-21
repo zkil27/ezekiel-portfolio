@@ -31,7 +31,7 @@ export function Home() {
                 } />
             </div>
             <div className="project-showcase-title"><SplitText text={
-                    "Proud Project Showcase"
+                    "Best of my work"
                 } /></div>
             <div className="project-showcase-cont">
                 
@@ -39,18 +39,18 @@ export function Home() {
                     <ul className='project-showcase-list'>
                         <li>
                             <ProjectCard 
-                                title="Interactive Valentine's Scratch Card Experience"
+                                title="1. CREEEEEEEEEEET"
                                 tags={[
                                     { text: "Interactive web app", size: "small" },
                                     { text: "Game", size: "small" },
-                                    { text: "For fun", size: "small" },
-                                    { text: "Not Real", variant: "warning", size: "small" }
+                                    { text: "For Fun", size: "small" },
                                 ]}
                                 descriptions={[
-                                    "A web application that showcases a collection of clutch moments from the game Valorant, allowing users to view and share impressive plays. The app features a sleek design, smooth animations, and a user-friendly interface, making it easy for players to relive their best moments.",
-                                    "Built to celebrate the most exciting moments in Valorant and create a community hub for players to showcase their skills."
+                                    "A Valentine’s scratch card game designed for the web lets you unlock a personal message or image by scanning a QR code. When you scan the code, you’re directed to a digital scratch card with a Valentine’s theme. You use your mouse or finger to scratch off the virtual surface, and underneath is a surprise that’s been set up for you.", 
+                                    
+                                    "The game is built with JavaScript, CSS, and HTML, so it works in any browser without extra downloads. It’s a simple, interactive way to share something personal for Valentine’s Day and connects a physical gesture, scanning a code, with a playful online experience."
                                 ]}
-                                buttonLink="https://www.facebook.com/kel.escueta.2024"
+                                buttonLink="https://github.com/zkil27/CREEEEEEEEEEEEEEEEET"
                                 threshold={0.5}
                                 videoSrc="/videos/clutch.mp4"
                                 onVideoChange={handleVideoChange}
@@ -58,18 +58,18 @@ export function Home() {
                         </li>
                         <li>
                             <ProjectCard 
-                                title="Interactive Valentine's Scratch Card Experience"
+                                title="2. ICTCPROJECT"
                                 tags={[
-                                    { text: "Interactive web app", size: "small" },
-                                    { text: "Game", size: "small" },
-                                    { text: "For fun", size: "small" },
-                                    { text: "Not Real", variant: "warning", size: "small" }
+                                    { text: "School Project", size: "small" },
+                                    { text: "Full Stack", size: "small" },
+                                    { text: "For Study", size: "small" },
+                                    { text: "Not Finished", variant: "warning", size: "small" }
                                 ]}
                                 descriptions={[
-                                    "A web application that showcases a collection of clutch moments from the game Valorant, allowing users to view and share impressive plays. The app features a sleek design, smooth animations, and a user-friendly interface, making it easy for players to relive their best moments.",
+                                    "This project is a simple PHP-based login and logout system designed for study and learning purposes using XAMPP. It demonstrates the basic principles of user authentication, including a login form, session management, and logout functionality.",
                                     
                                 ]}
-                                buttonLink="https://www.facebook.com/kel.escueta.2024"
+                                buttonLink="https://github.com/zkil27/ITCPROJECT"
                                 threshold={0.5}
                                 videoSrc="/videos/clutch2.mp4"
                                 onVideoChange={handleVideoChange}
@@ -77,20 +77,54 @@ export function Home() {
                         </li>
                         <li>
                             <ProjectCard 
-                                title="Interactive Valentine's Scratch Card Experience"
+                                title="3. COMPROGPROJECT"
                                 tags={[
-                                    { text: "Interactive web app", size: "small" },
-                                    { text: "Game", size: "small" },
-                                    { text: "For fun", size: "small" },
-                                    { text: "Not Real", variant: "warning", size: "small" }
+                                    { text: "School Project", size: "small" },
+                                    { text: "Ordering", size: "small" },
+                                    { text: "Array", size: "small" },
+                                    { text: "Java", size: "small" },
+                                    { text: "Finished", variant: "success", size: "small" }
                                 ]}
                                 descriptions={[
-                                    "A web application that showcases a collection of clutch moments from the game Valorant, allowing users to view and share impressive plays. The app features a sleek design, smooth animations, and a user-friendly interface, making it easy for players to relive their best moments.",
+                                    "A Java console app for restaurant ordering lets you enter your name, pick menu items, choose how many to order, and select a payment method. It calculates your total with tax and any convenience fee, then gives you a receipt. The app uses arrays and the Scanner class to manage orders and handle input. It’s a simple way to practice Java basics.",
                                     
                                 ]}
-                                buttonLink="https://www.facebook.com/kel.escueta.2024"
+                                buttonLink="https://github.com/zkil27/COMPROGPROJECT"
                                 threshold={0.5}
-                                videoSrc="/images/clutch3.jpg"
+                                videoSrc="/videos/clutch3.mp4"
+                                onVideoChange={handleVideoChange}
+                            />
+                        </li>
+                        <li>
+                            <ProjectCard 
+                                title="4. HMMMMMMMMM"
+                                tags={[
+                                    { text: "idk", size: "small" }
+                                ]}
+                                descriptions={[
+                                    "This is what happens when you ask your yoga instructor for “something that’ll stretch me out” and they take it literally. Honestly, if you squint, it’s either a human windmill or a stick figure that got tired of being two-dimensional. I’m not sure if this is a workout or an audition for being the next addition to a compass rose. Either way, I give it a perfect 90 degrees. -chatgpt lol",
+                                    
+                                ]}
+                                buttonLink="https://x.com/ResNeXtGuesser/status/1557162329023795200"
+                                threshold={0.5}
+                                videoSrc="/images/clutch4.jpg"
+                                onVideoChange={handleVideoChange}
+                            />
+                        </li>
+                        <li>
+                            <ProjectCard 
+                                title="5. Minecrafot"
+                                tags={[
+                                    { text: "funny", size: "small" },
+                                    { text: "haha", size: "small" }
+                                ]}
+                                descriptions={[
+                                    "mneicarfat with ano hahahaha, hi po",
+                                    
+                                ]}
+                                buttonLink="https://www.youtube.com/watch?v=3tMaQ18Scy0&t=144s"
+                                threshold={0.5}
+                                videoSrc="/videos/clutch5.mp4"
                                 onVideoChange={handleVideoChange}
                             />
                         </li>

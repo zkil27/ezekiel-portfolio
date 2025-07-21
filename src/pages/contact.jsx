@@ -1,10 +1,12 @@
+import './Contact.css';
+
 export function Contact() {
     return (
         <>
-            <h1>Coming Soon</h1>
-            <p>Stay tuned for updates!</p>
-            <button onClick={() => alert('Test!')}>Test Button</button>
-            <a href="#test">Test Link</a>
+            <div className="contact-page">
+                <h1>Work Work Work !!! in Progress 😔</h1>
+                <p>Apologies, this contact page is still being built. I’m updating it to make reaching out easier, so please check back soon</p>
+            </div>
         </>
     );
 }
