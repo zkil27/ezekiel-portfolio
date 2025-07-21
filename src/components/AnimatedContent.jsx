@@ -22,7 +22,8 @@ const AnimatedContent = ({
 
     useEffect(() => {
         const el = ref.current;
-        if (!el) return;
+        // Only proceed if el exists and is attached to the DOM
+        if (!el || !el.parentNode) return;
 
         const axis = direction === "horizontal" ? "x" : "y";
         const offset = reverse ? -distance : distance;
@@ -34,25 +35,39 @@ const AnimatedContent = ({
             opacity: animateOpacity ? initialOpacity : 1,
         });
 
-        gsap.to(el, {
-            [axis]: 0,
-            scale: 1,
-            opacity: 1,
-            duration,
-            ease,
-            delay,
-            onComplete,
-            scrollTrigger: {
-                trigger: el,
-                start: `top ${startPct}%`,
-                toggleActions: "play none none none",
-                once: true,
-            },
-        });
+        let tween;
+        try {
+            tween = gsap.to(el, {
+                [axis]: 0,
+                scale: 1,
+                opacity: 1,
+                duration,
+                ease,
+                delay,
+                onComplete,
+                scrollTrigger: el
+                    ? {
+                        trigger: el,
+                        start: `top ${startPct}%`,
+                        toggleActions: "play none none none",
+                        once: true,
+                    }
+                    : undefined,
+            });
+            setTimeout(() => {
+                ScrollTrigger.refresh();
+            }, 0);
+        } catch (error) {
+            console.error("GSAP/ScrollTrigger error:", error);
+        }
 
         return () => {
-            ScrollTrigger.getAll().forEach((t) => t.kill());
-            gsap.killTweensOf(el);
+            if (tween && tween.scrollTrigger) {
+                tween.scrollTrigger.kill();
+            }
+            if (tween) {
+                tween.kill();
+            }
         };
     }, [
         distance,
