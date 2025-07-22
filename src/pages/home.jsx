@@ -52,7 +52,7 @@ export function Home() {
                                 ]}
                                 buttonLink="https://github.com/zkil27/CREEEEEEEEEEEEEEEEET"
                                 threshold={0.5}
-                                videoSrc="/videos/clutch.mp4"
+                                videoSrc="/images/clutch1.jpg"
                                 onVideoChange={handleVideoChange}
                             />
                         </li>
@@ -71,7 +71,7 @@ export function Home() {
                                 ]}
                                 buttonLink="https://github.com/zkil27/ITCPROJECT"
                                 threshold={0.5}
-                                videoSrc="/videos/clutch2.mp4"
+                                videoSrc="/images/clutch2.png"
                                 onVideoChange={handleVideoChange}
                             />
                         </li>
@@ -91,7 +91,7 @@ export function Home() {
                                 ]}
                                 buttonLink="https://github.com/zkil27/COMPROGPROJECT"
                                 threshold={0.5}
-                                videoSrc="/videos/clutch3.mp4"
+                                videoSrc="/images/clutch3.png"
                                 onVideoChange={handleVideoChange}
                             />
                         </li>
@@ -124,7 +124,7 @@ export function Home() {
                                 ]}
                                 buttonLink="https://www.youtube.com/watch?v=3tMaQ18Scy0&t=144s"
                                 threshold={0.5}
-                                videoSrc="/videos/clutch5.mp4"
+                                videoSrc="/images/clutch5.png"
                                 onVideoChange={handleVideoChange}
                             />
                         </li>
