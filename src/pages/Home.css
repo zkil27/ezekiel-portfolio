@@ -1,0 +1,170 @@
+.hero-text {
+    padding-top: 5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    width: 21.8125rem;
+    caret-color: transparent;
+}
+
+.hero-icon{
+    width: 141.6875rem;
+    height: 100%;
+    caret-color: transparent;
+    position: relative;
+    transform: translate(-14rem, 9rem);
+}
+
+.home-page {
+    min-height: 100vh;
+}
+
+.layon-title-text{
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    font-style: italic;
+}
+
+.layon-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+    font-size: 2rem;
+    font-weight: 600 !important;
+    line-height: 1.5;
+    max-width: 45rem;
+    text-align: left;
+}
+
+.project-showcase-title {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15rem;
+
+    font-size: 2rem;
+    font-weight: 300 !important;
+    font-style: italic;
+
+}
+
+.project-showcase-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 4rem);
+    height: 100%;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.project-showcase-cont-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.project-showcase-list{
+    list-style-type: none;
+    justify-content: center;
+}
+
+.project-showcase-list li {
+    margin: 25rem 0;
+    height: 40rem;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 1.25rem;
+    font-weight: 400 !important;
+}
+
+.project-showcase-list h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-showcase-list p {
+    margin: 0.5rem 0;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+.project-showcase-list hr {
+    background-color: #e1e1e1;
+    border: none;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 35rem;
+    margin-left: 0;
+}
+
+.project-showcase-list a {
+
+    display: flex;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-top: 6rem;
+    width: fit-content;
+}
+
+.video-container {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+.project-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.white-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2941B5;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.white-overlay.active {
+    opacity: 1;
+}
+
+.blue-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2941B5;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.blue-overlay.active {
+    opacity: 1;
+}

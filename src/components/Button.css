@@ -1,0 +1,32 @@
+.custom-button {
+    position: relative;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: var(--fill-color, #2941B5);
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.custom-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--fill-color, #2941B5);
+    transition: width 0.5s ease;
+    z-index: -1;
+}
+
+.custom-button:hover::before {
+    width: 100%;
+}
+
+.custom-button:hover {
+    color: var(--text-color, #e1e1e1);
+}

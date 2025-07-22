@@ -1,8 +1,13 @@
-export function projects() {
+import './Projects.css';
+
+export function Projects() {
     return (
         <>
-            <h1>Our Projects</h1>
-            <p>Here you can find a list of our projects.</p>
+            <div className="projects-page">
+                <h1>Work in Progress 😔</h1>
+                <p>Sorry, this page is still under development. I’m working on preparing my side projects for display, so please check back soon for updates.</p>
+            </div>
+
         </>
     );
 }

@@ -1,0 +1,49 @@
+
+button{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    text-align: right;
+    font-weight: 600 !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: left;
+    font-weight: inherit;
+    
+}
+
+nav{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(2rem + 1vw);
+    z-index: 1000;
+    background-color: transparent;
+    caret-color: transparent;
+    
+}
+
+.home-icon{
+    width: 85.161px;
+    height: auto;
+}
+
+.nav-container{
+    display: flex;
+    margin-left: auto;
+}
+
+
+

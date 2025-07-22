@@ -1,25 +1,69 @@
-html{
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@font-face {
+  font-family: 'Jost';
+  src: url('/fonts/Jost.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Jost';
+  src: url('/fonts/Jost-Italic.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background: #c7c7c7;
+}
+
+
+
+::-webkit-scrollbar-thumb{
+  background: #2941B5;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #1e2f8a;
+}
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
   color-scheme: #2941B5;
   color: #2941B5;
-  background-color: #FFFFFF;
+  background-color: #e1e1e1;
 
-  font-synthesis: none;
+  font-synthesis: weight;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
-}
-
-
-body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2rem 2rem 0 2rem;
+
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  font-weight: 400;
+
+  font-family: 'Jost';
+
 }
+
+
 
 
