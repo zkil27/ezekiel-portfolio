@@ -1,4 +1,4 @@
-import './home.css';
+import './Home.css';
 import hero_icon from '../assets/images/hero-icon.svg';
 import AnimatedContent from '../components/AnimatedContent';
 import SplitText from '../components/SplitText';
