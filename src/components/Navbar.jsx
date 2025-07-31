@@ -20,7 +20,7 @@ export function Navbar(){
                     </Link>
 
                     <Link to="/about">
-                        <Button>ABOUT</Button>
+                        <Button>test</Button>
                     </Link>
                     <Link to="/contact">
                         <Button>REACH OUT</Button>
