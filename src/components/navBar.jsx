@@ -3,7 +3,7 @@ import { Button } from "./Button";
 import nav_icon from '../assets/images/fafafa.svg';
 import AnimatedContent from "./AnimatedContent";
 
-import "./NavBar.css"
+import "./Navbar.css"
 
 
 
