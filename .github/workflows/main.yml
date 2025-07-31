@@ -15,12 +15,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
-
-      - name: Clean install
-        run: |
-          rm -rf node_modules
-          rm -rf dist      
-
+        
       - name: Build Project
         run: npm run build
 
