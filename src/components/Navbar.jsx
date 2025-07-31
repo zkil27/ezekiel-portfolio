@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import { Button } from "./Button";
 import nav_icon from '../assets/images/fafafa.svg';
 import AnimatedContent from "./AnimatedContent";
-
 import "./Navbar.css"
 
 
