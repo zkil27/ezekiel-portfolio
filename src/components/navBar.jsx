@@ -3,12 +3,12 @@ import { Button } from "./Button";
 import nav_icon from '../assets/images/fafafa.svg';
 import AnimatedContent from "./AnimatedContent";
 
-import "./navBar.css"
+import "./NavBar.css"
 
 
 
 
-export function NavBar(){
+export function Navbar(){
     return(
         <>
             <AnimatedContent reverse={true}>
