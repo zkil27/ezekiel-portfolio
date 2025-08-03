@@ -39,7 +39,7 @@ export function Home() {
                     <ul className='project-showcase-list'>
                         <li>
                             <ProjectCard 
-                                title="1. CREEEEEEEEEEET"
+                                title="1. HAHAHAHAHAHAH"
                                 tags={[
                                     { text: "Interactive web app", size: "small" },
                                     { text: "Game", size: "small" },
