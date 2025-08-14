@@ -52,7 +52,7 @@ export function Home() {
                                 ]}
                                 buttonLink="https://github.com/zkil27/CREEEEEEEEEEEEEEEEET"
                                 threshold={0.5}
-                                videoSrc="/images/clutch1.jpg"
+                                videoSrc="/images/showcaseImage_1.jpg"
                                 onVideoChange={handleVideoChange}
                             />
                         </li>
@@ -71,7 +71,7 @@ export function Home() {
                                 ]}
                                 buttonLink="https://github.com/zkil27/ITCPROJECT"
                                 threshold={0.5}
-                                videoSrc="/images/clutch2.png"
+                                videoSrc="/images/showcaseImage_2.png"
                                 onVideoChange={handleVideoChange}
                             />
                         </li>
