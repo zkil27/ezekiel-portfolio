@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from "react";
 
 export function useVideoTransition(initialVideo = "/videos/clutch.mp4") {
     const [currentVideo, setCurrentVideo] = useState(initialVideo);
-    const [isTransitioning, setIsTransitioning] = useState(false);
+    const [isTransitioning, setIsTransitioning] = useState(false); // Start as false for no initial transition
 
     const handleVideoChange = (newVideoSrc) => {
         if (newVideoSrc !== currentVideo) {
             setIsTransitioning(true);
-            
+
             // Fade to blue first (200ms)
             setTimeout(() => {
                 setCurrentVideo(newVideoSrc);
@@ -22,6 +22,6 @@ export function useVideoTransition(initialVideo = "/videos/clutch.mp4") {
     return {
         currentVideo,
         isTransitioning,
-        handleVideoChange
+        handleVideoChange,
     };
 }

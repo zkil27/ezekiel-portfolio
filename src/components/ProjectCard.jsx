@@ -9,7 +9,7 @@ export function ProjectCard({
     descriptions = [],
     buttonText = "VIEW PROJECT",
     buttonLink = "#",
-    threshold = 0.5,
+    threshold = 1,
     className = "",
     videoSrc,
     onVideoChange
@@ -33,6 +33,7 @@ export function ProjectCard({
         return () => observer.disconnect();
     }, [videoSrc, onVideoChange]);
 
+    
     return (
         <div ref={cardRef}>
             <AnimatedContent threshold={threshold}>
