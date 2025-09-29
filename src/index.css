@@ -64,6 +64,21 @@ body{
 
 }
 
+.media-container {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+.media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 

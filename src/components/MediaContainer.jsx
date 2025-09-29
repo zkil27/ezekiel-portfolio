@@ -1,17 +1,17 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from "react";
 
-export function MediaContainer({ src, isTransitioning }) {
+export function MediaContainer({ src, isTransitioning, isFirst = false }) {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [isInView, setIsInView] = useState(false);
+    const [isInView, setIsInView] = useState(isFirst); 
     const mediaRef = useRef(null);
-    
-    // More robust image detection
-    const isImage = /\.(jpg|jpeg|png|gif|webp)(\?.*)?$/i.test(src || '');
-    
-    // Intersection Observer for lazy loading
+
+
+    const isImage = /\.(jpg|jpeg|png|gif|webp)(\?.*)?$/i.test(src || "");
+
+ 
     useEffect(() => {
-        if (!mediaRef.current) return;
-        
+        if (!mediaRef.current || isFirst) return; 
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
@@ -19,45 +19,45 @@ export function MediaContainer({ src, isTransitioning }) {
                     observer.unobserve(entry.target);
                 }
             },
-            { 
+            {
                 threshold: 0.1,
-                rootMargin: '50px' // Start loading 50px before it's visible
+                rootMargin: "500px",
             }
         );
-        
+
         observer.observe(mediaRef.current);
         return () => observer.disconnect();
-    }, []);
+    }, [isFirst]);
 
     const handleLoad = () => setIsLoaded(true);
-    
+
     // Don't render media until it's about to be in view
     const shouldRenderMedia = isInView;
 
     return (
-        <div className="video-container" ref={mediaRef}>
+        <div className="media-container" ref={mediaRef}>
             {shouldRenderMedia && (
                 <>
                     {isImage ? (
-                        <img 
+                        <img
                             key={src}
                             src={src}
                             alt="Project showcase"
-                            className={`project-video ${isLoaded ? 'loaded' : ''}`}
+                            className={`media ${isLoaded ? "loaded" : ""}`}
                             onLoad={handleLoad}
-                            loading="lazy"
+                            loading={isFirst ? "eager" : "lazy"} // Eager loading for first image
                             decoding="async"
                         />
                     ) : (
-                        <video 
+                        <video
                             key={src}
                             src={src}
-                            autoPlay={isInView} // Only autoplay when in view
-                            muted 
-                            loop 
+                            autoPlay={isInView}
+                            muted
+                            loop
                             playsInline
-                            preload="none" // Don't preload until needed
-                            className={`project-video ${isLoaded ? 'loaded' : ''}`}
+                            preload={isFirst ? "auto" : "metadata"} // Full preload for first video
+                            className={`media ${isLoaded ? "loaded" : ""}`}
                             onLoadedData={handleLoad}
                             controls={false}
                             disablePictureInPicture
@@ -65,15 +65,14 @@ export function MediaContainer({ src, isTransitioning }) {
                     )}
                 </>
             )}
-            
-            {/* Show loading placeholder until media loads */}
+
             {!isLoaded && shouldRenderMedia && (
                 <div className="media-placeholder">
                     <div className="loading-spinner" />
                 </div>
             )}
-            
-            <div className={`blue-overlay ${isTransitioning ? 'active' : ''}`} />
+
+            <div className={`blue-overlay ${isTransitioning ? "active" : ""}`} />
         </div>
     );
 }
